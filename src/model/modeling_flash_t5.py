@@ -414,6 +414,7 @@ class FlashT5Stack(nn.Module, ModuleUtilsMixin):
         encoder_hidden_states=None,
         encoder_attention_mask=None,
         inputs_embeds=None,
+        **kwargs,
     ) -> BaseModelOutput:
         input_shape = input_ids.size()
         batch_size, seq_length = input_shape
